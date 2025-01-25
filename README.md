@@ -9,3 +9,5 @@ This can be helpful for shader graphics as well.
 **Issues/Tradeoffs:**
 It may have unexpected results for map decals, SetSubMaterial objects, lighting & effects due to the way rendered here.
 These may never be resolved due to the complexity of the rendering process. Still provides better detail
+
+![image](https://github.com/user-attachments/assets/c1a07904-416f-48ca-b191-a5d10624f93f)
