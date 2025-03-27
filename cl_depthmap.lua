@@ -10,7 +10,7 @@ local textureRT = GetRenderTargetEx("_rt_depthpro",
     MATERIAL_RT_DEPTH_SHARED,
     bit.bor(2, 256),
     0,
-    1 -- 1 - 8bit, 24 - 16bit, 29 32bit ** Restart Game **
+    24 -- 1 - 8bit, 24 - 16bit, 29 32bit ** Restart Game **
 )
 local renderMat = CreateMaterial("_rt_depthpro_mat"..math.random(1,1000000), "UnlitGeneric", {
     ["$basetexture"] = textureRT:GetName();
