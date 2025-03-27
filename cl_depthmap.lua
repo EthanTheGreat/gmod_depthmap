@@ -19,7 +19,7 @@ local renderMat = CreateMaterial("_rt_depthpro_mat"..math.random(1,1000000), "Un
 hook.Add( "RenderScene", "RenderDepthWrite", function()
 	render.PushRenderTarget( textureRT )
     render.Clear(0,0,0,0)
-    render.OverrideDepthEnable( true, true ) 
+    --render.OverrideDepthEnable( true, true ) 
     render.MaterialOverride(dw)
     render.BrushMaterialOverride( dw )
     render.WorldMaterialOverride( dw )
@@ -35,7 +35,7 @@ hook.Add( "RenderScene", "RenderDepthWrite", function()
     render.BrushMaterialOverride( nil )
     render.WorldMaterialOverride( nil )
     render.ModelMaterialOverride( nil )
-    render.OverrideDepthEnable( false, false ) 
+    --render.OverrideDepthEnable( false, false )  not needed 
 
 	render.PopRenderTarget()
 end )
